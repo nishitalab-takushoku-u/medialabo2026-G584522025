@@ -1,0 +1,27 @@
+h1 {
+    font-family: cursive;
+    background: linear-gradient(to right, rgb(103, 100, 100), #72a3e2);
+    color: white;
+    text-shadow: 3px 3px rgb(234, 35, 131);
+}
+body {
+    background-color: rgb(251, 191, 118); /* 薄い緑 */
+}
+h3 {
+    color: #1e1eba;
+    background: linear-gradient(to right, rgb(255, 255, 255), #fca0e4);
+}
+a:link {
+  color: rgb(228, 6, 43);
+}
+
+a:visited {
+  color: rgb(23, 120, 120);
+}
+
+a:hover {
+  text-decoration: none;
+}
+.b1 {
+  border-bottom-style: dotted;
+}
