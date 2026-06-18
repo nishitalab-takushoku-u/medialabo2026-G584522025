@@ -7,7 +7,14 @@ function print(data) {
         console.log("【" + n + "件目】");
         console.log("店名: " + shop.name);
         console.log("住所: " + shop.address);
+        console.log("アクセス: " + shop.access);
         console.log("ジャンル: " + shop.genre.name);
+        console.log("サブジャンル: " + shop.sub_genre.name);
+        console.log("キャッチコピー: " + shop.catch);
+        console.log("予算: " + shop.budget.average);
+        console.log("営業時間: " + shop.open);
+        console.log("最寄駅: " + shop.station_name);
+
         n = n + 1;
     }
 }
