@@ -4,7 +4,7 @@ function print(data) {
     let n = 1;
 
     for (let shop of data.results.shop) {
-        console.log("【" + n + "件目】");
+        console.log( n + "件目の検索結果");
         console.log("店名: " + shop.name);
         console.log("住所: " + shop.address);
         console.log("アクセス: " + shop.access);
