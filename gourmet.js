@@ -21,7 +21,80 @@ function print(data) {
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 
+    
+    let old = document.querySelector('div#result');
+    if (old) old.remove();
+
+    
+    let result = document.createElement('div');
+    result.id = 'result';
+    document.body.insertAdjacentElement('beforeend', result);
+
+    let n = 1;
+
+    
+    for (let shop of data.results.shop) {
+
+        
+        let box = document.createElement('div');
+
+        
+        let h = document.createElement('h3');
+        h.textContent = n + "件目の検索結果";
+        box.insertAdjacentElement('beforeend', h);
+
+       
+        let nameP = document.createElement('p');
+        nameP.textContent = "店名: " + shop.name;
+        box.insertAdjacentElement('beforeend', nameP);
+
+        
+        let addrP = document.createElement('p');
+        addrP.textContent = "住所: " + shop.address;
+        box.insertAdjacentElement('beforeend', addrP);
+
+        
+        let accP = document.createElement('p');
+        accP.textContent = "アクセス: " + shop.access;
+        box.insertAdjacentElement('beforeend', accP);
+
+        
+        let genreP = document.createElement('p');
+        genreP.textContent = "ジャンル: " + shop.genre.name;
+        box.insertAdjacentElement('beforeend', genreP);
+
+        
+        let subP = document.createElement('p');
+        subP.textContent = "サブジャンル: " + shop.sub_genre.name;
+        box.insertAdjacentElement('beforeend', subP);
+
+        
+        let catchP = document.createElement('p');
+        catchP.textContent = "キャッチコピー: " + shop.catch;
+        box.insertAdjacentElement('beforeend', catchP);
+
+        
+        let budP = document.createElement('p');
+        budP.textContent = "予算: " + shop.budget.average;
+        box.insertAdjacentElement('beforeend', budP);
+
+        
+        let openP = document.createElement('p');
+        openP.textContent = "営業時間: " + shop.open;
+        box.insertAdjacentElement('beforeend', openP);
+
+        
+        let stP = document.createElement('p');
+        stP.textContent = "最寄駅: " + shop.station_name;
+        box.insertAdjacentElement('beforeend', stP);
+
+        
+        result.insertAdjacentElement('beforeend', box);
+
+        n++;
+    }
 }
+
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
