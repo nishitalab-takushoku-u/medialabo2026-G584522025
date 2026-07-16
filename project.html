@@ -5,19 +5,49 @@
     <meta charset="utf-8">
     <title>グルメ情報</title>
     <link rel="stylesheet" href="style2.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="gourmet.js" defer></script>
 </head>
+
 <body>
+
     <h1>グルメ情報</h1>
     <h2>飲食店の情報を検索できます！！</h2>
 
     <p>
         検索キー
-        <input type="text" id="city" size="15" placeholder="店名を入力">
+        <input type="text" id="city" size="15" placeholder="例：G001">
         <button id="btn">検索</button>
     </p>
 
-    
+    <div id="keylist">
+        <fieldset>
+            <legend><strong>検索キー一覧</strong></legend>
+
+            <ul>
+                <li>G001：居酒屋</li>
+                <li>G002：ダイニングバー・バル</li>
+                <li>G003：創作料理</li>
+                <li>G004：和食</li>
+                <li>G005：洋食</li>
+                <li>G006：イタリアン・フレンチ</li>
+                <li>G007：中華</li>
+                <li>G008：焼肉・ホルモン</li>
+                <li>G009：アジア・エスニック料理</li>
+                <li>G010：各国料理</li>
+                <li>G011：カラオケ・パーティ</li>
+                <li>G012：バー・カクテル</li>
+                <li>G013：ラーメン</li>
+                <li>G014：カフェ・スイーツ</li>
+                <li>G015：その他グルメ</li>
+                <li>G016：お好み焼き・もんじゃ</li>
+                <li>G017：韓国料理</li>
+            </ul>
+
+        </fieldset>
+    </div>
 
 </body>
 </html>
+
